@@ -105,6 +105,7 @@
 }
 
 [data-type="operator"]:hover,
-[data-type="number"]:hover{
+[data-type="number"]:hover,
+[data-type="clear"]:hover {
     background-color:darkgray;
 }

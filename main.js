@@ -18,7 +18,9 @@ keys.addEventListener("click", event => {
           display.textContent = keyValue
         } else if (previousKeyType == "operator") {
             display.textContent = keyValue
-        } 
+        } else if (previousKeyType == "equals"){
+            display.textContent = keyValue
+        }
         else {
           display.textContent = displayValue + keyValue
         }
@@ -48,9 +50,15 @@ keys.addEventListener("click", event => {
         if (operator == "multiply") result = firstNumber * secondNumber
         if (operator == "divide") result = firstNumber / secondNumber
 
-        console.log(result)
+        display.textContent = result
     }
 
+    //clear key
+    if (type === 'clear') {
+        display.textContent = '0'
+        delete calculator.dataset.firstNumber
+        delete calculator.dataset.operator
+      }
 
 
     calculator.dataset.previousKeyType = type
