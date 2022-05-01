@@ -39,9 +39,9 @@ keys.addEventListener("click", event => {
 
     if (type == "equals"){
         //perform the calculation
-        const firstNumber = parseInt(calculator.dataset.firstNumber)
+        const firstNumber = parseFloat(calculator.dataset.firstNumber)
         const operator = calculator.dataset.operator
-        const secondNumber = parseInt(displayValue)
+        const secondNumber = parseFloat(displayValue)
         console.log(firstNumber, operator, secondNumber)
 
         let result = ""
