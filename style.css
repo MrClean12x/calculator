@@ -1,0 +1,110 @@
+
+  html {
+    font-size: 150%;
+    font-weight: 300;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+  }
+  
+  body {
+    display: flex;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+ .calculator {
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    overflow: hidden;
+    height:500px;
+    width:500px;
+  }
+  
+.screen{
+    background-color: black;
+    color: white;
+    width: 470px;
+    height: 70px;
+    padding: 0.75rem 1rem;
+    text-align: right;
+    font-size: calc(1rem * 1.2 * 1.2);
+}
+
+.btnGrid{
+    height:395px;
+    width:500px;
+    background: darkgray;
+    display: grid;
+    grid-gap:2px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas:
+        ". . . ."
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "zero decimal clear equal"
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.decimal {
+    grid-area: decimal;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.equal {
+    grid-area: equal;
+    background-color: orange;
+}
+
+.equal:hover{
+    background-color:darkorange;
+}
+
+.operator:hover,
+.number:hover{
+    background-color:darkgray;
+}
