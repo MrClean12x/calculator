@@ -48,7 +48,9 @@ keys.addEventListener("click", event => {
         if (operator == "plus") result = firstNumber + secondNumber
         if (operator == "minus") result = firstNumber - secondNumber
         if (operator == "multiply") result = firstNumber * secondNumber
-        if (operator == "divide") result = firstNumber / secondNumber
+        if (operator == "divide" && secondNumber != 0) result = firstNumber / secondNumber
+        if (operator == "divide" && secondNumber === 0) result = "really?"
+        
 
         display.textContent = result
     }
